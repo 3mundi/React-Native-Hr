@@ -4,11 +4,11 @@ import PropTypes from 'prop-types'
 
 import styled from 'styled-components'
 
-const Row = styled.View `
+const Row = styled(props => <View {...props} />) `
   flexDirection: row;
 `
 
-const Side = styled.View `
+const Side = styled(props => <View {...props} />) `
   height: this.props.width;
   backgroundColor: ${props => props.color
   ? props.color
